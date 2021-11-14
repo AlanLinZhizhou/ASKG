@@ -374,6 +374,12 @@ Precision (Pre.), Recall (Rec.) and marco F1 on the overall performance of the A
     <img src="results2.png" height="300"/>
 </p> 
 
+#### The detailed results for each emotion class
 
+<p align="center">
+    <img src="results2.png" height="300"/>
+</p> 
 
-
+<p align="center">
+    <img src="results2.png" height="300"/>
+</p> 
