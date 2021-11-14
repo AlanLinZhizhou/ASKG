@@ -38,7 +38,7 @@ Datasets include:
 -- /autosenti/kgs/xxx.spo                                           ---> automatically generated knwoledge
 -- /datasets                                                        ---> datasets
 -- /models                                                          ---> config files of pre-trained models
--- /skgframework                                                    ---> the framework of SAKG
+-- /skgframework                                                    ---> the framework of ASKG
 ```
 
 
