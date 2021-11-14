@@ -392,7 +392,7 @@ Precision (Pre.), Recall (Rec.) and marco F1 on the overall performance of the A
     <img src="result4.png" height="500"/>
 </p> 
 
-## Notice
+## Notice(if you want to reproduce ablation study)
 For each point in the figure of ablation study, run the following script once by changing k0, k, l_ra0 and l_ra
 ```sh
 CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
