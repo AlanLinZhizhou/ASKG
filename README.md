@@ -58,6 +58,7 @@ run generate_kgs_xxx.py
 python add_externsenti2kgs.py \
       --input_spo_path ./kgs/xx.spo \
       --output_spo_path ./kgs/xx 
+(3).Add your generated spo file to ``autosenti/config.py``
 ```
 
 
