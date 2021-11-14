@@ -3,7 +3,7 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 
 ## Model Architecture
 <p align="center">
-    <img src="model.jpg" height="600"/>
+    <img src="model.jpg" height="500"/>
 </p> 
 
 ## Requirements
@@ -21,13 +21,21 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 ### Datasets
 Datasets include:
 ```
-* SST-5 
-* SST-3 
-* MR
-* ALM
-* AMAN
+* SST-5 (highly negative,negative,neutral,positive,highly positive)
+* SST-3 (negative,neutral,positive)
+* MR (positive)
+* ALM (angry-disgusted, fearful, happy, sad, surprised.)
+* AMAN (happy, sad, disgust, angry, fear, surprise.) 
 ```
 *All datasets are available on request to the owner of dataset.* 
+
+[SST dataset,including SST3 and SST5](https://nlp.stanford.edu/sentiment/)
+
+[MR dataset](https://www.cs.cornell.edu/people/pabo/movie-review-data/)
+
+[ALM dataset](http://people.rc.rit.edu/~coagla/affectdata/index.html)
+
+[AMAN dataset](http://saimacs.github.io/)
 
 ### File Architecture (Selected important files)
 ```
@@ -377,7 +385,7 @@ Precision (Pre.), Recall (Rec.) and marco F1 on the overall performance of the A
 #### The detailed results for each emotion class
 
 <p align="center">
-    <img src="result3.png" height="500"/>
+    <img src="result3.png" height="430"/>
 </p> 
 
 <p align="center">
