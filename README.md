@@ -48,7 +48,7 @@ Datasets include:
 * Download the ``stanford-corenlp-full-2018-10-05.zip`` from [here](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), and unzip it to the ``autosenti/`` directory.
 
 ### Generate Sentiment Knowledge
-* a) You can directly download the sentiment knowledge from [here](https://share.weiyun.com/GVupcuPO) and save it to ``autosenti/`` directory.
+* a) You can directly download the sentiment knowledge from [here](https://share.weiyun.com/GVupcuPO) or [here](https://drive.google.com/drive/folders/1YF1l-9ccUgTIT0j5Psmk6x7G7bSMIxok?usp=sharingand) save it to ``autosenti/`` directory.
 * b) Or you can also generate it on your own by utilizing our scripts
 
 
