@@ -227,8 +227,115 @@ CUDA_VISIBLE_DEVICES=0 nohup python3 -u run_classifier.py \
     --report_steps 20 \
 ```
 
+### Emotion Detection example
 
+Run example on ALM with SKG-BERT:
+```sh
+CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-base.bin \
+    --vocab_path  ./models/google_uncased_en_vocab.txt \
+    --train_path  ./datasets/ALM/train.tsv \
+    --dev_path  ./datasets/ALM/dev.tsv \
+    --test_path  ./datasets/ALM/test.tsv \
+    --output_model_path  ./models/ALM-base-skg.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 10 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name alm \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 0 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 11 \
+    --step 0.01 \
+    --report_steps 20 \
+```
 
+Run example on ALM with SKG-BERT-PT:
+```sh
+CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-PT.bin \
+    --vocab_path  ./models/review-vocab.txt \
+    --train_path  ./datasets/ALM/train.tsv \
+    --dev_path  ./datasets/ALM/dev.tsv \
+    --test_path  ./datasets/ALM/test.tsv \
+    --output_model_path  ./models/ALM-PT-SKG.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 10 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name alm \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 0 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 11 \
+    --step 0.01 \
+    --report_steps 20 \
+```
+
+Run example on AMAN with SKG-BERT:
+```sh
+CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-base.bin \
+    --vocab_path  ./models/google_uncased_en_vocab.txt \
+    --train_path  ./datasets/AMAN/train.tsv \
+    --dev_path  ./datasets/AMAN/dev.tsv \
+    --test_path  ./datasets/AMAN/test.tsv \
+    --output_model_path  ./models/AMAN-base.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 10 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name AMAN \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 0 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 11 \
+    --step 0.01 \
+    --report_steps 20 \
+```
+
+Run example on AMAN with SKG-BERT-PT:
+```sh
+CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-PT.bin \
+    --vocab_path  ./models/review-vocab.txt \
+    --train_path  ./datasets/AMAN/train.tsv \
+    --dev_path  ./datasets/AMAN/dev.tsv \
+    --test_path  ./datasets/AMAN/test.tsv \
+    --output_model_path  ./models/AMAN-PT-SKG.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 10 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name AMAN \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 0 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 11 \
+    --step 0.01 \
+    --report_steps 20 \
+```
 
 
 
