@@ -25,9 +25,10 @@ Datasets include:
 * SST-3 (negative,neutral,positive)
 * MR (positive)
 * ALM (angry-disgusted, fearful, happy, sad, surprised.)
-* AMAN (happy, sad, disgust, angry, fear, surprise.) [here](http://saimacs.github.io/)
+* AMAN (happy, sad, disgust, angry, fear, surprise.) 
 ```
 *All datasets are available on request to the owner of dataset.* 
+[AMAN dataset](http://saimacs.github.io/)
 
 ### File Architecture (Selected important files)
 ```
