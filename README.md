@@ -28,7 +28,9 @@ Datasets include:
 * AMAN (happy, sad, disgust, angry, fear, surprise.) 
 ```
 *All datasets are available on request to the owner of dataset.* 
+
 [ALM dataset](http://people.rc.rit.edu/~coagla/affectdata/index.html)
+
 [AMAN dataset](http://saimacs.github.io/)
 
 ### File Architecture (Selected important files)
