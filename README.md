@@ -362,6 +362,6 @@ For each dataset, we run it for 5 times and take the averaged value as final res
 Accuracy (dev/test %) on different dataset:
 
 <p align="center">
-    <img src="model.jpg" height="600"/>
+    <img src="results1.png" height="300"/>
 </p> 
 
