@@ -41,8 +41,9 @@ Datasets include:
 -- /skgframework                                                    ---> the framework of ASKG
 ```
 
-
-
+## Get Started
+* Download the ``bert_base_model.bin`` from [here](https://share.weiyun.com/5GuzfVX), and save it to the ``models/`` directory.
+* Download the ``bert_PT.bin`` from [here](https://share.weiyun.com/5GuzfVX), and save it to the ``models/`` directory.
 
 
 
