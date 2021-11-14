@@ -47,6 +47,9 @@ Datasets include:
 * Download the ``GoogleNews-vectors-negative300.bin`` from [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g), and save it to the ``autosenti/models/`` directory.
 * Download the ``stanford-corenlp-full-2018-10-05.zip`` from [here](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), and unzip it to the ``autosenti/`` directory.
 
+### Generate Sentiment Knowledge
+Directly download the sentiment knowledge from [here](https://share.weiyun.com/GVupcuPO) and save it to ``autosenti/``
+
 
 
 
