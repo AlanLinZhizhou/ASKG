@@ -61,6 +61,62 @@ python add_externsenti2kgs.py \
 (3).Add your generated spo file to ``autosenti/config.py``
 ```
 
+## Sentiment Classification and Emotion Detection
+### Classification example
+
+Run example on sst5 with SKG-BERT:
+```sh
+CUDA_VISIBLE_DEVICES=0 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-base.bin \
+    --vocab_path  ./models/google_uncased_en_vocab.txt \
+    --train_path  ./datasets/sst5/train.tsv \
+    --dev_path  ./datasets/sst5/dev.tsv \
+    --test_path  ./datasets/sst5/test.tsv \
+    --output_model_path  ./models/sst5/modelsst5-bertbase.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 5 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name sst5_addsenti \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 0 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 11 \
+    --step 0.01 \
+    --report_steps 20 \
+```
+
+Run example on sst5 with SKG-BERT-PT:
+```sh
+CUDA_VISIBLE_DEVICES=0 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-PT.bin \
+    --vocab_path  ./models/google_uncased_en_vocab.txt \
+    --train_path  ./datasets/sst5/train.tsv \
+    --dev_path  ./datasets/sst5/dev.tsv \
+    --test_path  ./datasets/sst5/test.tsv \
+    --output_model_path  ./models/sst5/modelsst5-bertPT.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 5 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name sst5_addsenti \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 0 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 11 \
+    --step 0.01 \
+    --report_steps 20 \
+```
 
 
 
