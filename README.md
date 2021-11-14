@@ -358,6 +358,7 @@ useage: [--pretrained_model_path] - Path to the pre-trained model parameters.
 
 ### Classification benchmarks
 For each dataset, we run it for 5 times and take the averaged value as final results.
+
 Accuracy (dev/test %) on different dataset:
 
 | Dataset       | SKG-BERT     | SKG-BERT-PT   |
