@@ -52,7 +52,12 @@ Datasets include:
 * b) Or you can also generate it on your own by utilizing our scripts
 ```
 The process of generating sentiment knowlegde on your own
-aaa
+(1).Generate sentiment knowledge without external knowledge
+run generate_kgs_xxx.py
+(2).Add external knowledge to sentiment knowledge
+python add_externsenti2kgs.py \
+      --input_spo_path ./kgs/xx.spo \
+      --output_spo_path ./kgs/xx 
 ```
 
 
