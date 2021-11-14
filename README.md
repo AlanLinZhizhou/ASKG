@@ -44,6 +44,8 @@ Datasets include:
 ## Get Started
 * Download the ``bert_base_model.bin`` from [here](https://share.weiyun.com/5GuzfVX), and save it to the ``models/`` directory.
 * Download the ``bert_PT.bin`` from [here](https://share.weiyun.com/5GuzfVX), and save it to the ``models/`` directory.
+* Download the ``GoogleNews-vectors-negative300.bin`` from [here](https://share.weiyun.com/5GuzfVX), and save it to the ``autosenti/models/`` directory.
+* Download the ``stanford-corenlp-full-2018-10-05.zip`` from [here](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), and unzip it to the ``autosenti/`` directory.
 
 
 
