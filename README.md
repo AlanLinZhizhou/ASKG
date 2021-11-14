@@ -3,5 +3,5 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 
 ## model architecture
 <p align="center">
-    <img src="model.jpg" height="900"/>
+    <img src="model.jpg" height="600"/>
 </p> 
