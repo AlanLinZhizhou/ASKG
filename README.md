@@ -29,6 +29,10 @@ Datasets include:
 ```
 *All datasets are available on request to the owner of dataset.* 
 
+[SST dataset,including SST3 and SST5](https://nlp.stanford.edu/sentiment/)
+
+[MR dataset](https://www.cs.cornell.edu/people/pabo/movie-review-data/)
+
 [ALM dataset](http://people.rc.rit.edu/~coagla/affectdata/index.html)
 
 [AMAN dataset](http://saimacs.github.io/)
