@@ -361,9 +361,7 @@ For each dataset, we run it for 5 times and take the averaged value as final res
 
 Accuracy (dev/test %) on different dataset:
 
-| Dataset       | SKG-BERT     | SKG-BERT-PT   |
-| :-----        | :----:       | :----:        |
-| MR            | 94.1/86.6    | 95.1/89.4     |
-| SST3          | 71.7/75.0    | 74.7/76.9     |
-| SST5          | 51.2/53.1    | 53.3/56.6     |
+<p align="center">
+    <img src="model.jpg" height="600"/>
+</p> 
 
