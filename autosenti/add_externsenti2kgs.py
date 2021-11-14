@@ -30,7 +30,7 @@ def main():
                 temp_dict[k] = str(new_v) + '?' + new_cnt
             else:
                 temp_dict[k] = str(v.strip()) + '?' + str(1)
-        with open(args.output_spo_path+'_addsenti','w',encoding='utf-8') as f3:
+        with open(args.output_spo_path+'_addsenti.spo','w',encoding='utf-8') as f3:
             for senti_item in senti_dict:
                 key = senti_item.split('\t')[1].strip()
                 key = key + '#a'
