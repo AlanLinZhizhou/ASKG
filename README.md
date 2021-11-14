@@ -21,11 +21,11 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 ### Datasets
 Datasets include:
 ```
-* SST-5 
-* SST-3 
-* MR
-* ALM
-* AMAN
+* SST-5 (highly negative,negative,neutral,positive,highly positive)
+* SST-3 (negative,neutral,positive)
+* MR (positive)
+* ALM (angry-disgusted, fearful, happy, sad, surprised.)
+* AMAN (happy, sad, disgust, angry, fear, surprise.)
 ```
 *All datasets are available on request to the owner of dataset.* 
 
