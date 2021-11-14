@@ -11,13 +11,12 @@ from skgframework.utils import Vocab
 path = './stanford-corenlp-full-2018-10-05'
 nlp = StanfordCoreNLP(path, lang='en')
 
-# 读取句子
+
 
 with open('../datasets/sst3/train.tsv', 'r', encoding='ISO-8859-1') as f:
     l_dict = f.readlines()
 
-# with open('G:/post_pro/K-BERT/datasets/kitchen_housewares/train.tsv', 'r', encoding='utf-8') as f:
-#     l_dict = f.readlines()
+
 
 judges = ''
 triples = ''
