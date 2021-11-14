@@ -100,7 +100,7 @@ for i in range(1, len(l_dict)):
                         won_num = int(won_num) + 1
                     if judges == 'terrible':
                         ter_num = int(ter_num) + 1
-                    # 判断是否有冲突
+
                     if conf == '1' or judges != ac_judges:
                         op_dict[entity2 + '\t' + op] = judges + '\t' + str(count_tr) + '\t' + '1' + '\t' + str(
                             good_num) + '\t' + str(bad_num) + '\t' + str(won_num) + '\t' + str(ter_num)

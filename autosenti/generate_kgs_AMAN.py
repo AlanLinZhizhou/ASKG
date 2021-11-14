@@ -111,7 +111,7 @@ for i in range(1, len(l_dict)):
                         sad_num = int(sad_num) + 1
                     if judges == 'surprise':
                         sur_num = int(sur_num) + 1
-                    # 判断是否有冲突
+
                     if conf == '1' or judges != ac_judges:
                         op_dict[entity2 + '\t' + op] = judges + '\t' + str(count_tr) + '\t' + '1' + '\t' + str(
                             ang_num) + '\t' + str(dis_num) + '\t' + str(fear_num) + '\t' + str(joy_num) + '\t' + str(
