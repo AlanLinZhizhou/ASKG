@@ -11,8 +11,8 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 ```
 * Python == 3.6.9
 * Pytorch == 1.9.0
-* CUDA == 9.0.176
-* NVIDIA GeForce GTX 1080 Ti
+* CUDA == 10.2.89
+* NVIDIA Tesla V100
 * HuggingFaces Pytorch (also known as pytorch-pretrained-bert & transformers)
 * Stanford CoreNLP (stanford-corenlp-full-2018-10-05)
 * Numpy, Pickle, Tqdm, Scipy, etc. (See requirements.txt)
