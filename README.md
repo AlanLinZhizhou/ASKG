@@ -337,5 +337,32 @@ CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
     --report_steps 20 \
 ```
 
+### Options of ``run_classifier.py``:
+```
+useage: [--pretrained_model_path] - Path to the pre-trained model parameters.
+        [--config_path] - Path to the model configuration file.
+        [--vocab_path] - Path to the vocabulary file.
+        --train_path - Path to the training dataset.
+        --dev_path - Path to the validating dataset.
+        --test_path - Path to the testing dataset.
+        [--epochs_num] - The number of training epoches.
+        [--batch_size] - Batch size of the training process.
+        [--kg_name] - The name of spo files, "alm", "AMAN" or "sst3_addsenti", and etc.
+        [--output_model_path] - Path to the output model.
+        [--k0] - Grid search param, the start grid for hyperparameter g.
+        [--k] - Grid search param, the end grid for hyperparameter g.
+        [--l_ra0] - Grid search param, the start grid for hyperparameter lambda.
+        [--l_ra] - Grid search param, the end grid for hyperparameter lambda.
+        [--step] - Grid search param, the step of lambda.
+```
 
+### Classification benchmarks
+For each dataset, we run it for 5 times and take the averaged value as final results.
+Accuracy (dev/test %) on different dataset:
+
+| Dataset       | SKG-BERT     | SKG-BERT-PT   |
+| :-----        | :----:       | :----:        |
+| MR            | 94.1/86.6    | 95.1/89.4     |
+| SST3          | 71.7/75.0    | 74.7/76.9     |
+| SST5          | 51.2/53.1    | 53.3/56.6     |
 
