@@ -52,7 +52,7 @@ Datasets include:
 ## Get Started
 * Download the ``bert-base.bin`` from [here](https://share.weiyun.com/EY7aJitJ) or [here](https://drive.google.com/file/d/1Uq-fuDo8qPv2FywCnbxW83ymIo4Xo3BJ/view?usp=sharing), and save it to the ``models/`` directory.
 * Download the ``bert-PT.bin`` from [here](https://share.weiyun.com/2fUr7Mgu) or [here](https://drive.google.com/file/d/1tXjpMLLR4wdYT7qe4IT6U9Wh5fis09hY/view?usp=sharing), and save it to the ``models/`` directory.
-* Download the ``GoogleNews-vectors-negative300.bin.gz`` from [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g), and save it to the ``autosenti/models/`` directory.
+* Download the ``GoogleNews-vectors-negative300.bin.gz`` from [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit?resourcekey=0-wjGZdNAUop6WykTtMip30g), and unzip it to the ``autosenti/models/`` directory.
 * Download the ``stanford-corenlp-full-2018-10-05.zip`` from [here](http://nlp.stanford.edu/software/stanford-corenlp-full-2018-10-05.zip), and unzip it to the ``autosenti/`` directory.
 
 #### Generate Sentiment Knowledge
@@ -391,3 +391,31 @@ Precision (Pre.), Recall (Rec.) and marco F1 on the overall performance of the A
 <p align="center">
     <img src="result4.png" height="500"/>
 </p> 
+
+## Notice
+For each point in the figure of ablation study, run the script once by changing k0, k, l_ra0 and l_ra
+```sh
+CUDA_VISIBLE_DEVICES=1 nohup python3 -u run_classifier.py \
+    --pretrained_model_path ./models/bert-PT.bin \
+    --vocab_path  ./models/review-vocab.txt \
+    --train_path  ./datasets/ALM/train.tsv \
+    --dev_path  ./datasets/ALM/dev.tsv \
+    --test_path  ./datasets/ALM/test.tsv \
+    --output_model_path  ./models/ALM-PT-SKG.bin \
+    --config_path ./models/bert/base_config.json \
+    --epochs_num 10 \
+    --batch_size 32 \
+    --embedding word_pos_seg \
+    --encoder transformer \
+    --mask fully_visible \
+    --kg_name alm \
+    --workers_num 1 \
+    --em_weight 0.6 \
+    --mylambda 0.6 \
+    --k0 1 \
+    --k 2 \
+    --l_ra0 1 \
+    --l_ra 2 \
+    --step 0.1 \
+    --report_steps 20 \
+```
