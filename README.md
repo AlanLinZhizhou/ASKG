@@ -356,7 +356,7 @@ useage: [--pretrained_model_path] - Path to the pre-trained model parameters.
         [--step] - Grid search param, the step of lambda.
 ```
 
-### Classification benchmarks
+### Sentiment Classification benchmarks
 For each dataset, we run it for 5 times and take the averaged value as final results.
 
 Accuracy (dev/test %) on different dataset:
@@ -364,4 +364,16 @@ Accuracy (dev/test %) on different dataset:
 <p align="center">
     <img src="results1.png" height="300"/>
 </p> 
+
+### Emotion Detection benchmarks
+For each dataset, we run it for 5 times and take the averaged value as final results.
+
+Precision (Pre.), Recall (Rec.) and marco F1 on the overall performance of the Alm dataset (%).
+
+<p align="center">
+    <img src="results2.png" height="300"/>
+</p> 
+
+
+
 
