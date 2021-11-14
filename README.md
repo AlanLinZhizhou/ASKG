@@ -51,6 +51,7 @@ Datasets include:
 * a) You can directly download the sentiment knowledge from [here](https://share.weiyun.com/GVupcuPO) or [here](https://drive.google.com/drive/folders/1YF1l-9ccUgTIT0j5Psmk6x7G7bSMIxok?usp=sharingand) save it to ``autosenti/`` or ``autosenti/kg`` directory.
 * b) Or you can also generate it on your own by utilizing our scripts
 ```
+The process of generating sentiment knowlegde on your own
 aaa
 ```
 
