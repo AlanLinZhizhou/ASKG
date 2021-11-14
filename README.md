@@ -3,7 +3,7 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 
 ## Model Architecture
 <p align="center">
-    <img src="model.jpg" height="600"/>
+    <img src="model.jpg" height="500"/>
 </p> 
 
 ## Requirements
