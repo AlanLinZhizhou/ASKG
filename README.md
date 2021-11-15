@@ -15,7 +15,6 @@ code for ASKG: Learning Sentiment-EnhancedWord Representation with External Know
 * NVIDIA Tesla V100
 * HuggingFaces Pytorch (also known as pytorch-pretrained-bert & transformers)
 * Stanford CoreNLP (stanford-corenlp-full-2018-10-05)
-* Numpy, Pickle, Tqdm, Scipy, etc. (See requirements.txt)
 ```
 
 ### Datasets
