@@ -39,7 +39,7 @@ Datasets include:
 ### File Architecture (Selected important files)
 ```
 -- /autosenti/generate_kgs_xxxx.py                                  ---> generate kgs wihtout external knowledge
--- /autosenti/add_externsenti2kgs.py                                ---> add external knowledge to kgs (i.e. sentiwordnet 3.0.0)
+-- /autosenti/add_externsenti2kgs.py                                ---> add external knowledge to kgs (e.g. sentiwordnet 3.0.0)
 -- /autosenti/knowledgegraph.py                                     ---> knowledge filters and knowledge incorporation
 -- /lexicon/senti_score.txt                                         ---> the converted results of sentiwordnet 3.0.0
 -- /autosenti/kgs/xxx.spo                                           ---> automatically generated knwoledge
