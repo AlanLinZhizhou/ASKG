@@ -22,7 +22,7 @@ Datasets include:
 ```
 * SST-5 (highly negative,negative,neutral,positive,highly positive)
 * SST-3 (negative,neutral,positive)
-* MR (positive)
+* MR (positive，negative)
 * ALM (angry-disgusted, fearful, happy, sad, surprised.)
 * AMAN (happy, sad, disgust, angry, fear, surprise.) 
 ```
