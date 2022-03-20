@@ -62,7 +62,7 @@ The process of generating sentiment knowlegde on your own
 (1).Generate sentiment knowledge without external knowledge
 run generate_kgs_xxx.py
 (2).Add external knowledge to sentiment knowledge 
-(Notice for emotion classification ALM and AMAN datasets, do not add external sentiment knowledge)
+(Notice for emotion detection datasets(ALM and AMAN) , do not add external sentiment knowledge)
 python add_externsenti2kgs.py \
       --input_spo_path ./kgs/xx.spo \
       --output_spo_path ./kgs/xx 
