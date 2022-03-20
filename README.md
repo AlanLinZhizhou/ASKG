@@ -1,5 +1,5 @@
 # ASKG
-code for ASKG: Learning Sentiment-Enhanced Word Representation with External Knowledge Obtained by Weak Supervision
+code for ASKG: Learning Sentiment-Enhanced Word Representations by Fusing External Hybrid Knowledge with Weak Supervision
 
 ## Model Architecture
 <p align="center">
