@@ -1,5 +1,5 @@
 # ASKG
-code for ASKG: Learning Sentiment-EnhancedWord Representation with External Knowledge Obtained by Weak Supervision
+code for ASKG: Learning Sentiment-Enhanced Word Representations by Fusing External Hybrid Knowledge with Weak Supervision
 
 ## Model Architecture
 <p align="center">
@@ -22,7 +22,7 @@ Datasets include:
 ```
 * SST-5 (highly negative,negative,neutral,positive,highly positive)
 * SST-3 (negative,neutral,positive)
-* MR (positive)
+* MR (positive，negative)
 * ALM (angry-disgusted, fearful, happy, sad, surprised.)
 * AMAN (happy, sad, disgust, angry, fear, surprise.) 
 ```
@@ -39,7 +39,7 @@ Datasets include:
 ### File Architecture (Selected important files)
 ```
 -- /autosenti/generate_kgs_xxxx.py                                  ---> generate kgs wihtout external knowledge
--- /autosenti/add_externsenti2kgs.py                                ---> add external knowledge to kgs (i.e. sentiwordnet 3.0.0)
+-- /autosenti/add_externsenti2kgs.py                                ---> add external knowledge to kgs (e.g. sentiwordnet 3.0.0)
 -- /autosenti/knowledgegraph.py                                     ---> knowledge filters and knowledge incorporation
 -- /lexicon/senti_score.txt                                         ---> the converted results of sentiwordnet 3.0.0
 -- /autosenti/kgs/xxx.spo                                           ---> automatically generated knwoledge
@@ -62,7 +62,7 @@ The process of generating sentiment knowlegde on your own
 (1).Generate sentiment knowledge without external knowledge
 run generate_kgs_xxx.py
 (2).Add external knowledge to sentiment knowledge 
-(Notice for emotion classification ALM and AMAN datasets, do not add external sentiment knowledge)
+(Notice for emotion detection datasets(ALM and AMAN) , do not add external sentiment knowledge)
 python add_externsenti2kgs.py \
       --input_spo_path ./kgs/xx.spo \
       --output_spo_path ./kgs/xx 
